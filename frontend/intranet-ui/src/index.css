@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* 
+  Этот файл можно использовать для очень специфичных глобальных CSS-правил, 
+  которые не покрываются GlobalStyles.js или стилями компонентов.
+  Например, стили для сторонних библиотек, если они не могут быть стилизованы иначе.
+
+  Большинство глобальных сбросов и базовых стилей для body теперь находятся в src/styles/GlobalStyles.js
+*/
+
+/* Пример: если нужно переопределить что-то для конкретного класса сторонней библиотеки */
+/* .some-third-party-library-class {
+  font-family: sans-serif !important; 
+} */
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f2f5; /* Легкий фон в стиле Apple */
+  color: #1d1d1f; /* Основной цвет текста Apple */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
